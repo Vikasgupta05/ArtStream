@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './SignIn.module.css'; 
+import styles from '../assets/css/SignIn.module.css'; 
 
 const OTP = ({ length = 6, onChange }) => {
   const [otp, setOtp] = useState(new Array(length).fill(""));

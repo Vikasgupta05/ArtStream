@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import { ReactComponent as Logo } from './googlelogo.svg';
-import Email from './Email'; 
-import Password from './Password';
-import styles from './SignIn.module.css'; 
+import { ReactComponent as Logo } from '../assets/icons/googlelogo.svg';
+import Email from '../common/Email'; 
+import Password from '../common/Password';
+import styles from '../assets/css/SignIn.module.css'; 
 
 
-export default function SignInForm() {
+export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
@@ -24,7 +24,6 @@ export default function SignInForm() {
                 <h1 className="Heading fs-1 mb-4 fw-bold" style={{ fontFamily: "'Inknut Antiqua',serif" }}>Login to Magic</h1>
 
                 <Email email={email} setEmail={setEmail} />
-
                 <Password password={password} setPassword={setPassword} />
 
                 <div className="mb-4 d-flex justify-content-between align-items-center">
@@ -39,7 +38,7 @@ export default function SignInForm() {
                         <label className={`${styles.rememberMe } ${styles.bold}  custom-control-label`} htmlFor="check" style={{fontWeight:'500'}}>Remember me</label>
                     </div>
 
-                    <a href="#" className={`${styles.rememberMe}`} style={{color: 'gray', fontStyle :'italic'}}>Forgot Password?</a>
+                    <a href="/SignUp" className={`${styles.rememberMe}`} style={{color: 'gray', fontStyle :'italic'}}>Forgot Password?</a>
                 </div>
 
                 <div className="mb-4 d-grid gap-2 col-12 mx-auto">
@@ -65,7 +64,7 @@ export default function SignInForm() {
                     <div>
                         <label className="custom-control-label" htmlFor="check" style={{color: 'gray', fontStyle :'italic', fontSize:'12px'}}>Don't have an account?</label>
                     </div>
-                    <a href="#" className="text-decoration-none" style={{color: 'orangered' , fontWeight:'700'}} >Sign up now</a>
+                    <a href="/SignUp" className="text-decoration-none" style={{color: 'orangered' , fontWeight:'700'}} >Sign up now</a>
                 </div>
             </form>
         </div>
