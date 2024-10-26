@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600&display=swap');
+
+.ovalInput {
+    border-radius: 20px;
+    background-color: rgb(238, 233, 233);
+    padding: 4px 12px;
+}
+
+.extraWide {
+    width: 50%; /* Adjusts to full container width */
+    max-width: 500px; /* For example, limits width */
+}
+
+.rememberMe{
+    font-size: 13px;
+}
+
+.signIn{
+    background-color: orangered;
+}
+
+.signIn:hover{
+    background-color: rgb(241, 95, 41);
+}
+
+.otpStyle{
+    width: 23%;
+    max-width:40px;
+    height: 50px; 
+    background-color:rgb(238, 233, 233);
+    font-size:18px;
+}
