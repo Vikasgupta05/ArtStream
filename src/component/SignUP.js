@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import Email from './Email'; 
-import Password from './Password';
-import ConfirmPW from './ConfirmPW';
-import OTP from './OTP';
-import styles from './SignIn.module.css'; 
+import Email from '../common/Email'; 
+import Password from '../common/Password';
+import ConfirmPW from '../common/ConfirmPW';
+import OTP from '../common/OTP';
+import styles from '../assets/css/SignIn.module.css'; 
 
 export default function SignUPForm() {
     const [email, setEmail] = useState('');
@@ -38,7 +38,7 @@ export default function SignUPForm() {
                 <OTP length={6} onChange={(value) => setOTP(value)}/>
 
                 <div className="mb-3">
-                    <a href="#" style={{color: 'Gray'}}>RESEND OTP !</a>
+                    <a href="/SignUp" style={{color: 'Gray'}}>RESEND OTP !</a>
                 </div>
 
                 <div className="mb-2 d-grid gap-2 col-12 mx-auto">
@@ -50,7 +50,7 @@ export default function SignUPForm() {
                 <div className="mb-3 d-flex justify-content-center align-items-center col-12">
                     <div>
                         <label className="custom-control-label" htmlFor="check" style={{color: 'gray', fontStyle :'italic', fontSize:'12px'}}>I am a consistent user, </label>
-                        <a href="#" className="text-decoration-none" style={{color: 'orangered' , fontWeight:'700'}} > Sign in</a>
+                        <a href="/SignIn" className="text-decoration-none" style={{color: 'orangered' , fontWeight:'700'}} > Sign in</a>
                     </div>
                     
                 </div>

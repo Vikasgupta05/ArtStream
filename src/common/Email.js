@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SignIn.module.css';
+import styles from '../assets/css/SignIn.module.css';
 
 const EmailInput = ({ email, setEmail }) => {
     return (
