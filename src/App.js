@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import SignUPForm from './SignUP';
+import ForgetPassword from './ForgetPassword';
 
 
 function App() {
   return (
     <div className="App">
-      <SignUPForm></SignUPForm>
+      <ForgetPassword/>
     </div>
   );
 }

@@ -27,6 +27,48 @@
     width: 23%;
     max-width:40px;
     height: 50px; 
-    background-color:rgb(238, 233, 233);
+    background-color:rgb(202, 199, 199);
     font-size:18px;
+}
+
+.grayText{
+    font-size: 14px;
+    color : gray;
+}
+
+.customBorder {
+    border: 1px solid Gray;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color:rgb(238, 233, 233);
+}
+
+/*Css for blue background of forget password page*/
+/* AuthContainer.module.css */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.blurBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(2px); /* Adjust blur level as needed */
+    z-index: 1;
+    pointer-events: none; /* Prevent interaction with the blurred SignIn */
+}
+
+.foreground {
+    position: relative;
+    z-index: 2;
+    width:65%;
+    max-width: 450px;
 }
