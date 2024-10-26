@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './SignIn.module.css'; 
+import styles from '../assets/css/SignIn.module.css';
 import React, { useState } from 'react';
-import OTP from './OTP';
+import OTP from '../common/OTP';
 import SignIn from './SignIn';
 
 export default function ForgetPassword() {

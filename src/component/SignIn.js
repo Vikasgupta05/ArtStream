@@ -38,7 +38,7 @@ export default function SignIn() {
                         <label className={`${styles.rememberMe } ${styles.bold}  custom-control-label`} htmlFor="check" style={{fontWeight:'500'}}>Remember me</label>
                     </div>
 
-                    <a href="/SignUp" className={`${styles.rememberMe}`} style={{color: 'gray', fontStyle :'italic'}}>Forgot Password?</a>
+                    <a href="/ForgetPassword" className={`${styles.rememberMe}`} style={{color: 'gray', fontStyle :'italic'}}>Forgot Password?</a>
                 </div>
 
                 <div className="mb-4 d-grid gap-2 col-12 mx-auto">
