@@ -43,7 +43,7 @@
     background-color:rgb(238, 233, 233);
 }
 
-/*Css for blue background of forget password page*/
+/*Css for blur background of forget password page*/
 /* AuthContainer.module.css */
 .container {
     position: relative;
@@ -71,4 +71,25 @@
     z-index: 2;
     width:65%;
     max-width: 450px;
+}
+
+/* Dashboard */
+.navBar{
+  background-color: rgb(238, 233, 233);
+  border-radius: 30%;
+  font-size: 13px;
+  
+  font-weight: 650;
+}
+
+.activeColor{
+  background-color: orangered;
+}
+
+.navBarWidth{
+  width: 100%; /* Adjusts to full container width */
+  max-width: 800px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
