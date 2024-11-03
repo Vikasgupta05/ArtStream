@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../assets/icons/googlelogo.svg';
 import Email from '../common/Email'; 
 import Password from '../common/Password';
@@ -37,7 +38,8 @@ export default function SignIn() {
                         <label className={`${styles.rememberMe } ${styles.bold}  custom-control-label`} htmlFor="check" style={{fontWeight:'500'}}>Remember me</label>
                     </div>
 
-                    <a href="/SignUp" className={`${styles.rememberMe}`} style={{color: 'gray', fontStyle :'italic'}}>Forgot Password?</a>
+                    <Link to="/ForgetPassword" className={`${styles.rememberMe}`} style={{ color: 'gray', fontStyle: 'italic' }}>Forgot Password?</Link>
+                    
                 </div>
 
                 <div className="mb-4 d-grid gap-2 col-12 mx-auto">
@@ -63,7 +65,7 @@ export default function SignIn() {
                     <div>
                         <label className="custom-control-label" htmlFor="check" style={{color: 'gray', fontStyle :'italic', fontSize:'12px'}}>Don't have an account?</label>
                     </div>
-                    <a href="/SignUp" className="text-decoration-none" style={{color: 'orangered' , fontWeight:'700'}} >Sign up now</a>
+                    <Link to="/SignUp" className="text-decoration-none" style={{ color: 'orangered', fontWeight: '700' }}>Sign up now</Link>
                 </div>
             </form>
         </div>
