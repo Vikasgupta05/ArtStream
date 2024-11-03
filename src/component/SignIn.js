@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { ReactComponent as Logo } from '../assets/icons/googlelogo.svg';
 import Email from '../common/Email'; 

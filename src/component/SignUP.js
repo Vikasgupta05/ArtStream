@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import Email from '../common/Email'; 
 import Password from '../common/Password';
