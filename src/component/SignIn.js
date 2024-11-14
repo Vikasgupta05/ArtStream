@@ -63,7 +63,7 @@ export default function SignIn() {
 
                 <div className="mb-3 d-flex justify-content-between align-items-center col-12">
                     <div>
-                        <label className="custom-control-label" htmlFor="check" style={{color: 'gray', fontStyle :'italic', fontSize:'12px'}}>Don't have an account?</label>
+                        <label className="custom-control-label" style={{color: 'gray', fontStyle :'italic', fontSize:'12px'}}>Don't have an account?</label>
                     </div>
                     <Link to="/SignUp" className="text-decoration-none" style={{ color: 'orangered', fontWeight: '700' }}>Sign up now</Link>
                 </div>
