@@ -1,8 +1,17 @@
 import { Button } from "react-bootstrap";
-import pattern from "./Pattern.png";
-import "./Frontpage.css";
+import pattern from "../assets/img/Pattern.png";
+import { useNavigate,Link } from 'react-router-dom';
+import '../assets/css/Frontpage.css';
+
 
 export default function FrontPage() {
+
+  const navigate = useNavigate();
+
+    const handleContinue = () => {
+        navigate('/SignIn');
+    };
+
   return (
       <div className="mainDiv d-flex justify-content-center align-items-center ps-3 ps-md-4 ps-lg-4">
         <div className="leftDiv">
@@ -13,7 +22,9 @@ export default function FrontPage() {
             <p className="para2">Witness the power of art</p>
           </div>
 
-          <Button className="contBtn mt-3">Continue</Button>
+          <Link to="/Signin">
+                    <Button className="contBtn mt-3" onClick={handleContinue}>Continue</Button>
+                </Link>
         </div>
 
         <div className="rightDiv col-6">
