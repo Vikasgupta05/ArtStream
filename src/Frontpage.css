@@ -1,11 +1,21 @@
 .mainDiv {
+  height: 100vh;
     background: linear-gradient(to bottom, rgb(239, 124, 83), rgb(112, 112, 255));
     color: white;
   }
 
 .topDiv {
   font-family: "Inknut Antiqua", serif;
-  font-size: 40px;
+   font-size: 25px; 
+}
+
+.leftDiv{
+  width : 50%;
+  padding-left: 4rem;
+}
+
+.rightDiv{
+  padding-right: 2rem;
 }
 
 .para1 {
@@ -17,9 +27,54 @@
 }
 
 .imageDimension {
-  padding: 2rem;
-  max-width: 600px;
-  max-height: 600px;
+  width: 100%; 
+  height: auto;   
+  max-width: 500px;
+  object-fit: cover; 
+}
+
+.contBtn{
+  background-color: orangered;
+  border : none;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 15px;
+}
+
+.contBtn:hover{
+  background-color: orangered;
+  border : none;
+  color : white;
+  font-size: 15.5px;
+  width:fit-content;
+}
+
+@media (min-width: 768px) and (max-width : 991px) {
+  .topDiv {
+    font-size: 35px;
+  }
+
+  .para1{
+    font-size: 25px;
+  }
+
+  .para2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .topDiv {
+    font-size: 40px;
+  }
+
+  .para1{
+    font-size: 30px;
+  }
+
+  .para2 {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
@@ -28,11 +83,22 @@
     width: 100%;
     background: linear-gradient(to bottom, rgb(234, 108, 63), blue);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .leftDiv {
-    padding: 8rem 3rem;
+    width: 100%; /* Full width */
+    padding: 0 2rem; /* Add horizontal padding */
+    text-align: center; /* Center text inside */
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; 
   }
+
   .imageDimension {
     display: none;
   }
@@ -45,6 +111,7 @@
   .para1 {
     font-size: 25px;
   }
+
   .para2 {
     font-size: 20px;
   }
@@ -70,12 +137,22 @@
   .mainDiv {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to bottom, rgb(234, 108, 63), blue);
     color: white;
   }
 
   .leftDiv {
-    padding: 8rem 2rem;
+    width: 100%; /* Full width */
+    padding: 0 1.5rem; /* Add horizontal padding */
+    text-align: center; /* Center text inside */
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; 
   }
 
   .imageDimension {
