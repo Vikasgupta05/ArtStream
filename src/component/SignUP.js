@@ -23,7 +23,7 @@ export default function SignUPForm() {
     return (
         <div className='login d-flex align-items-center justify-content-center' style={{ height: '100vh'}}>
             <form onSubmit={handleSubmit} style={{ width: '50%', maxWidth: '500px' }}>
-                <h1 className="Heading fs-2 mb-4 fw-bold" style={{ fontFamily: "'Inknut Antiqua', serif" }}>Create Account</h1>
+                <h1 className="Heading fs-2 mb-4 fw-bold text-center" style={{ fontFamily: "'Inknut Antiqua', serif" }}>Create Account</h1>
 
                 <Email email={email} setEmail={setEmail} />
 
@@ -37,7 +37,7 @@ export default function SignUPForm() {
 
                 <OTP length={6} onChange={(value) => setOTP(value)} />
 
-                <div className="mb-3">
+                <div className="mb-3 text-center">
                     <Link to="/SignUp" style={{ color: 'gray' }}>RESEND OTP!</Link>
                 </div>
 

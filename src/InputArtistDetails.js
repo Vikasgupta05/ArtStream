@@ -5,14 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-export default function InputDetails({FormData, SetFormData, artFormsList, setArtFormsList}) {
+export default function InputDetails({
+  FormData,
+  SetFormData,
+  artFormsList,
+  setArtFormsList,
+}) {
   const inputRef = useRef(null);
 
   const navigate = useNavigate();
   const handleNext = () => {
-      navigate("/bio");
+    navigate("/bio");
   };
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -91,20 +95,18 @@ export default function InputDetails({FormData, SetFormData, artFormsList, setAr
         <div className="innerDiv d-flex justify-content-center align-items-center mb-2">
           {/* This div contains the profile image or the default profile icon */}
           {FormData.profile ? (
-            
             <img
               src={URL.createObjectURL(FormData.profile)}
               alt="Selected Profile"
               onClick={handleImageClick}
               className="profileArea"
             />
-        
           ) : (
-            <div className="defaultProfile d-flex justify-content-center align-items-center" onClick={handleImageClick}>
-              <FontAwesomeIcon
-                icon={faUser}
-                alt="default Profile"
-              />
+            <div
+              className="defaultProfile d-flex justify-content-center align-items-center"
+              onClick={handleImageClick}
+            >
+              <FontAwesomeIcon icon={faUser} alt="default Profile" />
             </div>
           )}
 
@@ -120,8 +122,11 @@ export default function InputDetails({FormData, SetFormData, artFormsList, setAr
         </div>
 
         {/* Message under the profile image */}
-        <div>
-          <p className="paraCss"> Tap to choose pictures </p>
+        <div className="">
+          <p className="paraCss d-flex align-items-center justify-content-center">
+            {" "}
+            Tap to choose pictures{" "}
+          </p>
         </div>
 
         <Form onSubmit={handleSubmit}>
@@ -199,9 +204,9 @@ export default function InputDetails({FormData, SetFormData, artFormsList, setAr
                     placeholder="Enter your custom artform"
                     value={FormData.customArtForm}
                     onChange={handleCustomArtFormChange}
-                    className=" row-input me-3" 
+                    className=" row-input me-3"
                   />
-                  <Button 
+                  <Button
                     onClick={handleAddCustomArtForm}
                     className="Artform-btn"
                   >
@@ -222,11 +227,19 @@ export default function InputDetails({FormData, SetFormData, artFormsList, setAr
                 className="row-input"
                 required
               />
-              <p className="paraCss"> This email will be displayed on your profile </p>
+              <p className="paraCss d-flex justify-content-center mt-2">
+                {" "}
+                This email will be displayed on your profile{" "}
+              </p>
             </Form.Group>
           </Row>
 
-          <Button className="mt-3 signIn col-5" onClick={handleNext}> Next </Button>
+          <Row className="d-flex justify-content-center">
+            <Button className="mt-3 signIn col-3" onClick={handleNext}>
+              {" "}
+              Next{" "}
+            </Button>
+          </Row>
         </Form>
       </Container>
     </>

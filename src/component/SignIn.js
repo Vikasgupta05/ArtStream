@@ -21,7 +21,7 @@ export default function SignIn() {
     return (
         <div className='login d-flex align-items-center justify-content-center' style={{ height: '100vh'}}>
             <form onSubmit={handleSubmit} style = {{width:'50%',maxWidth: '500px'}}>
-                <h1 className="Heading fs-1 mb-4 fw-bold" style={{ fontFamily: "'Inknut Antiqua',serif" }}>Login to Magic</h1>
+                <h1 className="Heading fs-1 mb-4 fw-bold text-center " style={{ fontFamily: "'Inknut Antiqua',serif" }}>Login to Magic</h1>
 
                 <Email email={email} setEmail={setEmail} />
                 <Password password={password} setPassword={setPassword} />

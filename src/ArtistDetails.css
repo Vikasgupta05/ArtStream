@@ -1,129 +1,202 @@
-.profileArea{
-    border-radius: 50%;
-    height: 100px;
-    width:100px;
-    object-fit:contain;
-    background-color: rgb(238, 233, 233);
+.profileArea {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  background-color: rgb(238, 233, 233);
 }
 
-.defaultProfile{
-    background-color:rgb(238, 233, 233);
-    font-size: 50px;
-    cursor: pointer;
-    border-radius: 50%;
-    height:100px;
-    width:100px;
+.defaultProfile {
+  background-color: rgb(238, 233, 233);
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
-.innerDiv{
-    display: flex;
+.innerDiv {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 300px; /* Limit the width to prevent excessive stretching */
   margin: 0 auto;
-    
 }
 
 .paraCss {
-    font-style: italic;
-    color: gray;
-    font-size: 12px;
+  font-style: italic;
+  color: gray;
+  font-size: 12px;
 }
 
-.stylingP{
-    color: gray;
-    font-size: 12px;
+.stylingP {
+  color: gray;
+  font-size: 12px;
 }
 
-.artForm{
-    width : 100%;
+.artForm {
+  width: 100%;
 }
 
 .row-input {
-    border-radius: 20px;
-    background-color: rgb(238, 233, 233);
-    padding: 4px 12px;
-    color: rgb(85, 82, 82);
+  border-radius: 20px;
+  background-color: rgb(238, 233, 233);
+  padding: 4px 12px;
+  color: rgb(85, 82, 82);
 }
 
-.Artform-btn{
-    font-size: 12px;
-    padding: 1px;
-    width:38%;
-    max-width: 250px;
-    border-radius : 20px;
-    height:30px;
-    background-color: rgb(238, 233, 233);
-    color: rgb(85, 82, 82);
-    border : 1px solid rgb(103, 103, 103);
+.Artform-btn {
+  font-size: 12px;
+  padding: 1px;
+  width: 38%;
+  max-width: 250px;
+  border-radius: 20px;
+  height: 30px;
+  background-color: rgb(238, 233, 233);
+  color: rgb(85, 82, 82);
+  border: 1px solid rgb(103, 103, 103);
 }
-.btn:hover{
-    background-color: rgb(238, 233, 233);
-    color: rgb(85, 82, 82);
-    border : 1px solid black;
-    width : 39%;
-}
-
-.Container-width{
-    width: 70%;
-    max-width: 500px;
+.btn:hover {
+  background-color: rgb(238, 233, 233);
+  color: rgb(85, 82, 82);
+  border: 1px solid black;
+  width: 39%;
 }
 
-.signIn{
-    color : white;
-    background-color: orangered;
-    border-radius : 20px;
+.Container-width {
+  width: 70%;
+  max-width: 500px;
 }
 
-.signIn:hover{
-    background-color: rgb(241, 95, 41);
+.signIn {
+  color: white;
+  background-color: orangered;
+  border-radius: 20px;
+}
+
+.signIn:hover {
+  background-color: rgb(252, 82, 20);
 }
 
 /* BIO page css */
 .blurredBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(1.5px); /* Adjust blur level as needed */
-    z-index: 1;
-    pointer-events: none; /* Prevent interaction with the blurred SignIn */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(1.5px); /* Adjust blur level as needed */
+  z-index: 1;
+  pointer-events: none; /* Prevent interaction with the blurred SignIn */
 }
 
-.bgColor{
-    position: relative;
-    z-index: 2;
-    background-color: rgb(238, 233, 233); /* Optional: add a background color if needed */
-    padding: 20px; /* Optional: add padding for a better look */
-    border-radius: 47px; /* Optional: add rounded corners */
-    border : 1px solid gray;
-    margin-top: 10rem;
-    height:320px;
+.bgColor {
+  position: relative;
+  z-index: 2;
+  background-color: rgb(
+    238,
+    233,
+    233
+  ); /* Optional: add a background color if needed */
+  padding: 20px; /* Optional: add padding for a better look */
+  border-radius: 47px; /* Optional: add rounded corners */
+  border: 1px solid gray;
+  margin-top: 10rem;
+  height: 320px;
+  max-height: 350px;
 }
 
-.bioInput{
-    border : 1px solid gray;
+.bioInput {
+    width: 90%;
+    border: 1px solid gray;
     background-color: rgb(238, 233, 233);
     color: rgb(85, 82, 82);
     border-radius: 40px;
-    padding :12px;
+    padding: 12px;
+    margin-left: 2rem;
+  
+    /* Remove the scrollbar */
+    overflow: hidden; /* Hides scrollbar but disables scrolling */
+    overflow-y: scroll; /* Keeps vertical scrolling enabled while hiding the scrollbar */
+  
+    /* For Webkit Browsers (Chrome, Edge, Safari) */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .bioInput::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Webkit browsers */
+  }
+  
+.arrow {
+  height: 100%;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
-.bioInput::placeholder {
-    text-align: left; /* Aligns placeholder text to the left */
-    vertical-align: top; /* Positions placeholder text at the top */
+.bioButton {
+  color: white;
+  background-color: orangered;
+  border-radius: 20px;
+  width: fit-content;
+  border: none;
+  font-size: 15px;
+}
+
+.bioButton:hover {
+  color: white;
+  background-color: orangered;
+  width: fit-content;
+  border: none;
+  font-size: 15.5px;
+}
+
+.invalid-feedback {
+  text-align: center;
+  color: red;
+  display: block; /* Ensure it's displayed as a block-level element */
+  width: 100%; /* Makes sure the error takes up full width */
+  font-size: 1rem; /* Optional: Adjust the font size */
 }
 
 /* Video page css */
-.dimension{
-    position: relative;
-    z-index: 2;
-    background-color: rgb(238, 233, 233); 
-    padding: 20px;
-    border-radius: 47px; /* Optional: add rounded corners */
-    border : 1px solid gray;
-    margin-top: 13rem;
-    height : 200px;
+.dimension {
+  position: relative;
+  z-index: 2;
+  background-color: rgb(238, 233, 233);
+  padding: 20px;
+  border-radius: 47px; /* Optional: add rounded corners */
+  border: 1px solid gray;
+  margin-top: 13rem;
+  height: 280px;
+}
+
+.addBtn{
+    background-color: orangered;
+    border : none;
+    width : 6rem;
+    border-radius: 20px;
+}
+
+.addBtn:hover{
+    background-color: orangered;
+    border : none;
+    color: white;
+    width : 6.2rem;
+    border-radius: 20px;
+}
+.skipBtn{
+  background-color: gray;
+  border : none;
+  width : 6rem;
+  border-radius: 20px;
+}
+
+.skipBtn:hover{
+  background-color: gray;
+  border : none;
+  color: white;    
+  width : 6.2rem;
+  border-radius: 20px;
 }
